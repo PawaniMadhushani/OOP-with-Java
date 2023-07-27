@@ -12,7 +12,7 @@ public class Lab01
 {
     public static void main(String[] args) 
     {
-        System.out.println("Name: Fazla Fiyas");
+        System.out.println("Name: Pawani Madhushani");
         System.out.println("Degree programme: Bsc(HONOURS) in Software Engineering"); 
     }
 }
