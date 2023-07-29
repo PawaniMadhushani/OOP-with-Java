@@ -1,0 +1,56 @@
+package com.mycompany.cylinder;
+public class Cylinder 
+{
+    public static void main(String[] args) 
+    {
+        CylinderContainer container=new CylinderContainer();
+        container.setHeight(5.0);
+        container.setRadius(2.0);
+        
+        double volume=container.calculateVolume();
+        System.out.println("Volume:"+volume);
+    }
+}
+
+
+
+
+
+
+package com.mycompany.cylinder;
+public abstract class Container
+{
+    private double height;
+    private double radius;
+    public abstract double calculateVolume();
+    public void setHeight(double height)
+    {
+        this.height=height;
+    }
+    public void setRadius(double radius)
+    {
+        this.radius=radius;
+    }
+    public double getHeight()
+    {
+        return height;
+    }
+    public double getRadius()
+    {
+        return radius;
+    }
+}
+
+
+
+
+package com.mycompany.cylinder;
+public class CylinderContainer extends Container
+{
+    @Override
+    public double calculateVolume()
+    {
+        double volume=Math.PI * getRadius() * getRadius() * getHeight();
+        return volume;
+    }
+}
