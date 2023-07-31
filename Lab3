@@ -64,7 +64,7 @@ public class EncapTest
     public static void main(String[] args) 
     {
         Test t1=new Test();
-        t1.setName("Fazla Fiyas");
+        t1.setName("Pawani Madhushani");
         t1.setAge(21);
         t1.setSalary(125000.00f);
         System.out.println("Name: "+t1.getName());
